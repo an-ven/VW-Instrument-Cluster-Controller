@@ -238,11 +238,11 @@ Start/Stop system message:
 - `AA = 0x0C`: Display "Engine Starting" message
 - `AA = 0x0D`: Display "Depress Clutch" message
 - `AA = 0x0E`: Display "Move selector lever to position P/N" message
-- `AA = 0x0F`: Display "Apply Break" message
+- `AA = 0x0F`: Display "Apply Brake" message
 
-Break pedal warning light:
+Brake pedal warning light:
 - Bitfield: `BB`
-- Bit 0: Green Break Pedal Warning light
+- Bit 0: Green Brake Pedal Warning light
 
 # Other functions
 
@@ -264,7 +264,7 @@ Fuel level gauge is controlled by two input signals:
 - FuelGaugeF: IO Pin 1
 - FuelGaugeE: IO Pin 2
 
-A resistor chain (or a potentiometer) is connected between the two inputs. Fuel level is set by grounding the resistor chain somewhere between the two inputs (see schematic)
+A resistor chain (or a potentiometer) is connected between the two inputs. Fuel level is set by grounding the resistor chain somewhere between the two inputs (see schematic).
 
 ![Fuel Gauge Resistor Chain](Resources/FuelGaugeResistorChain.png)
 ## Outside temperature
@@ -274,7 +274,7 @@ Outside temperature value is read from an analog input that is connected via a 3
 
 ## Various indicator lights
 
-- Hand break warning light: IO Pin 25, Active Low
+- Hand brake warning light: IO Pin 25, Active Low
 - Fog light indicator light: IO Pin 13, Active High (+12V)
 
 ## Multi function display control inputs
@@ -284,7 +284,7 @@ There are three button inputs, that are used to select between different display
 - Button Minus: IO Pin 22, Active Low
 - Button OK/Reset: IO Pin 23, Active Low
 
-# Some links to usefull resources
+# Some links to useful resources
 
 [https://hackaday.io/project/6288-can-bus-gaming-simulator](https://hackaday.io/project/6288-can-bus-gaming-simulator)
 
